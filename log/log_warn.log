@@ -1,0 +1,37 @@
+2020-09-29 15:13:56.458 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2020-09-29 15:13:57.346 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'albumController': Unsatisfied dependency expressed through field 'worksService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'worksServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.demo.mapper.WorksMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-09-29 15:19:37.036 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'albumController': Unsatisfied dependency expressed through field 'worksService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'worksServiceImpl': Unsatisfied dependency expressed through field 'baseMapper'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'worksMapper' defined in file [D:\WORK\GITworkspace2\ai_demo\target\classes\com\example\demo\mapper\WorksMapper.class]: Unsatisfied dependency expressed through bean property 'sqlSessionFactory'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [com/baomidou/mybatisplus/autoconfigure/MybatisPlusAutoConfiguration.class]: Unsatisfied dependency expressed through method 'sqlSessionFactory' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2020-09-29 16:34:19.332 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webAppConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'img.storage.path' in value "${img.storage.path}"
+2020-09-29 16:48:56.724 [http-nio-8080-exec-1] WARN  com.aliyun.oss - [Server]Unable to execute HTTP request: The bucket you are attempting to access must be addressed using the specified endpoint. Please send all future requests to this endpoint.
+[ErrorCode]: AccessDenied
+[RequestId]: 5F72F4F8999ED63130CE81B4
+[HostId]: aidemo1.oss-cn-shanghai.aliyuncs.com
+[ResponseError]:
+<?xml version="1.0" encoding="UTF-8"?>
+<Error>
+  <Code>AccessDenied</Code>
+  <Message>The bucket you are attempting to access must be addressed using the specified endpoint. Please send all future requests to this endpoint.</Message>
+  <RequestId>5F72F4F8999ED63130CE81B4</RequestId>
+  <HostId>aidemo1.oss-cn-shanghai.aliyuncs.com</HostId>
+  <Bucket>aidemo1</Bucket>
+  <Endpoint>oss-cn-beijing.aliyuncs.com</Endpoint>
+</Error>
+
+2020-09-29 16:59:14.162 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=52s47ms406µs700ns).
+2020-09-29 17:08:26.402 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m19s468ms217µs).
+2020-09-29 17:10:15.621 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m49s219ms735µs900ns).
+2020-09-29 17:20:57.876 [http-nio-8080-exec-5] WARN  com.aliyun.oss - [Server]Unable to execute HTTP request: The bucket you are attempting to access must be addressed using the specified endpoint. Please send all future requests to this endpoint.
+[ErrorCode]: AccessDenied
+[RequestId]: 5F72FC792399BD3137B71ED7
+[HostId]: aidemo1.oss-cn-shanghai.aliyuncs.com
+[ResponseError]:
+<?xml version="1.0" encoding="UTF-8"?>
+<Error>
+  <Code>AccessDenied</Code>
+  <Message>The bucket you are attempting to access must be addressed using the specified endpoint. Please send all future requests to this endpoint.</Message>
+  <RequestId>5F72FC792399BD3137B71ED7</RequestId>
+  <HostId>aidemo1.oss-cn-shanghai.aliyuncs.com</HostId>
+  <Bucket>aidemo1</Bucket>
+  <Endpoint>oss-cn-beijing.aliyuncs.com</Endpoint>
+</Error>
+
