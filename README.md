@@ -4,7 +4,7 @@
 实现三种识别功能
 
 页面如下：
-
+![Image](https://github.com/renyy/ai_demo/blob/master/src/main/resources/img/%E5%9B%BE%E7%89%871.png)
  1.身份证识别
 
 在上传人像面选择身份证正面
